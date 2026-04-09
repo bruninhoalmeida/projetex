@@ -1,4 +1,4 @@
-# 🚀 Projeto React - Lista de Perfis
+#  Projeto React - Lista de Perfis
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
@@ -87,24 +87,6 @@ src/
  ├── main.jsx
  └── assets/
 ```
-
----
-
-## 📸 Como adicionar o GIF
-
-1. Crie uma pasta chamada:
-
-```
-assets
-```
-
-2. Coloque seu GIF lá dentro com o nome:
-
-```
-demo.gif
-```
-
-3. Pronto! Ele já vai aparecer no README automaticamente 
 
 ---
 
