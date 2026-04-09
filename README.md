@@ -14,7 +14,7 @@
 
 ###  Modo Escuro
 
-![Demo 2](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
+![Demo 2](https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif)
 
 ---
 
