@@ -11,6 +11,8 @@
 
 ![Demo do projeto](./assets/demo.gif)
 
+![Demo](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
+
 ---
 
 ##  Sobre o projeto
