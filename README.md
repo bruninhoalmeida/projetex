@@ -4,111 +4,129 @@
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 
-
 ---
 
 ##  Demonstração
 
-![Demo do projeto](./assets/demo.gif)
+###  Interface do Projeto
 
-![Demo](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
+![Demo 1](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
+
+###  Modo Escuro
+
+![Demo 2](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
 
 ---
 
 ##  Sobre o projeto
 
-Este é um projeto desenvolvido com **React + Vite**, com o objetivo de exibir uma lista de perfis contendo:
+Este projeto foi desenvolvido com **React + Vite** e tem como objetivo exibir uma lista de perfis com informações como nome, idade, email e foto.
 
-* Nome
-* Idade
-* Email
-* Foto
-
-Além disso, o projeto conta com **modo escuro (dark mode)** para melhorar a experiência do usuário 
+Além disso, possui **modo escuro (dark mode)** que pode ser alternado pelo usuário.
 
 ---
 
 ##  Funcionalidades
 
-✅ Listagem dinâmica de perfis
-✅ Exibição de imagem, nome, idade e email
-✅ Alternância entre modo claro e escuro
-✅ Interface simples e organizada
+✅ Listagem de perfis
+✅ Exibição de foto, nome, idade e email
+✅ Botão para alternar modo escuro
+✅ Interface simples e responsiva
 
 ---
 
-##  Tecnologias utilizadas
+##  Explicação do código
 
-* React
-* Vite
-* JavaScript
-* CSS
+###  useState
+
+```jsx id="a1"
+const [darkMode, setDarkMode] = useState(true);
+```
+
+* Controla o estado do modo escuro
+* `darkMode` → valor atual
+* `setDarkMode` → altera o valor
 
 ---
 
-##  Como rodar o projeto
+###  Lista de perfis
 
-Clone o repositório:
-
-```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPO.git
+```jsx id="a2"
+const perfis = [ ... ];
 ```
 
-Entre na pasta:
-
-```bash
-cd NOME-DO-REPO
-```
-
-Instale as dependências:
-
-```bash
-npm install
-```
-
-Rode o projeto:
-
-```bash
-npm run dev
-```
-
-Acesse no navegador:
-
-```
-http://localhost:5173/
-```
+* Array de objetos com dados dos usuários
 
 ---
 
-##  Estrutura do projeto
+###  Estrutura principal
 
+```jsx id="a3"
+<div className={darkMode ? "container dark" : "container"}>
 ```
+
+* Alterna classes CSS dinamicamente
+
+---
+
+###  Botão
+
+```jsx id="a4"
+<button onClick={() => setDarkMode(!darkMode)}>
+```
+
+* Alterna entre modo claro e escuro
+
+---
+
+###  Renderização
+
+```jsx id="a5"
+{perfis.map((perfil, index) => (
+  <Perfil
+    key={index}
+    nome={perfil.nome}
+    idade={perfil.idade}
+    email={perfil.email}
+    foto={perfil.foto}
+  />
+))}
+```
+
+* Percorre a lista e renderiza os componentes
+
+---
+
+##  Estrutura
+
+```id="a6"
 src/
  ├── App.jsx
  ├── App.css
  ├── main.jsx
+ ├── perfil.jsx
  └── assets/
 ```
 
 ---
 
+##  Como rodar
+
+```bash id="a7"
+npm install
+npm run dev
+```
+
+http://localhost:5173/
+
+---
+
 ##  Autor
 
-Desenvolvido por BrunoAlmeida
+BrunoAlmeida
 
 ---
 
-##  Status do projeto
+##  Status
 
  Em desenvolvimento
-
----
-
-##  Melhorias futuras
-
-* [ ] Adicionar backend
-* [ ] Sistema de login
-* [ ] Banco de dados
-* [ ] Deploy online
-
----
